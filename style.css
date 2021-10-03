@@ -1,0 +1,269 @@
+:root{
+    --white: #fafafa;
+    --lightgray: #eaeaea;
+    --gray: #b0b0b0;
+    --black: #1a1f1f;
+    --darkgray: #2a2f2f;
+    --blue: rgb(8, 167, 221);
+    --green: rgb(0, 215, 221);
+}
+
+.white {
+    color: var(--white);
+}
+
+.lightgray {
+    color: var(--lightgray);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+    color: var(--darkgray);
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 4vw 7vw;
+    z-index: 2;
+}
+
+header nav {
+    padding-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav > li:first-child {
+    margin: 0 1vw;
+}
+
+header h2 > a {
+    font-family: "Poppins";
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+.btn {
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    border-radius: 25px;
+    padding: 4px 25px;
+    margin: 2px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    transition: all 300ms ease-out;
+}
+
+header nav .btn {
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+header nav > li:first-child .btn{
+    border-color: transparent;
+    transition: all 300ms ease-out, border-color 380ms ease-out;
+}
+
+header nav > li:first-child .btn:hover {
+    border-color: var(--white);
+}
+
+header nav .btn:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+section {
+    min-height: 100vh;
+    padding: 7vw;
+}
+
+section:first-child {
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+section:nth-child(even) {
+    background-color: #fafafa;
+}
+
+section:nth-child(odd) {
+    background-color: var(--lightgray);
+}
+
+.default-gradient {
+    background-image: linear-gradient(to bottom right, rgb(8, 167, 221),rgb(0, 215, 221));
+}
+
+section.intro {
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+section.intro .wrapper {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.intro .wrapper > div:first-child {
+    max-width: 600px;
+    padding: 7vh 0 2vh 0;
+}
+
+section.intro .wrapper > div:first-child h1 {
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+section.intro .wrapper > div:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+.intro .wrapper h3 {
+    text-transform: uppercase;
+}
+
+section.intro .img-phone {
+    width: 75%;
+    height: 20%;
+}
+h1 {
+    font-family: "Poppins";
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+/* for section1 button */
+section.intro .wrapper a.btn {
+    margin: 30px 2vw 0 2vw;
+    border: 2px solid var(--darkgray);
+    text-transform: capitalize;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    padding: 10px 30px;
+}
+
+section.intro a.btn > i {
+    color: inherit;
+    transition: inherit;
+}
+
+section.intro .wrapper a.apple-store {
+    background-color: var(--darkgray);
+}
+
+section.intro .wrapper a.apple-store:hover {
+    background-color: var(--white);
+    color: var(--darkgray);
+    border-color: var(--white);
+}
+
+section.intro .wrapper a.google-play {
+    color: var(--darkgray);
+}
+
+section.intro .wrapper a.google-play:hover {
+    background-color: var(--white);
+    border-color: var(--white);
+
+}
+
+/* second section */
+
+section .whatwedo {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--gray);
+    font-weight: normal;
+}
+section.feature h1 {
+    text-align: center;
+    line-height: 110%;
+    margin: 20px 10vw 100px 10vw;
+}
+section .grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5vw;
+}
+
+section .grid .card {
+    text-align: center;
+    border-radius: 25px;
+    padding: 20px;
+    transition: all 300ms ease-in;
+}
+
+.card:nth-child(1):hover {
+    box-shadow: #c77f96 2px 2px 10px 2px;
+}
+
+.card:nth-child(2):hover {
+    box-shadow: rgb(185, 185, 55) 2px 2px 10px 2px;
+}
+
+.card:nth-child(3):hover {
+    box-shadow: rgb(109, 109, 201) 2px 2px 10px 2px;
+}
+
+.card > * {
+    margin: 10px 5px;
+}
+
+.card > img {
+    transition: all 400ms 30ms cubic-bezier(0.175, 0.885, 0.32, 3);
+}
+
+.card > img:hover {
+    transform: scale(1.2);
+}
+.card > h3 {
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    /* margin: 5vh 0; */
+}
+
+.card > p {
+    margin-top: 10px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.card > a {
+    margin-top: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 5px;
+}
+
+.learn-more {
+    border: 1px solid var(--gray);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-transform: capitalize;
+}
