@@ -16,6 +16,10 @@
     color: var(--lightgray);
 }
 
+.black {
+    color: var(--black);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -169,6 +173,7 @@ section.intro .wrapper a.btn {
 section.intro a.btn > i {
     color: inherit;
     transition: inherit;
+    margin-right: 8px;
 }
 
 section.intro .wrapper a.apple-store {
@@ -191,7 +196,7 @@ section.intro .wrapper a.google-play:hover {
 
 }
 
-/* second section */
+/* what we do section */
 
 section .whatwedo {
     text-align: center;
@@ -303,7 +308,7 @@ section .grid .card {
 }
 
 /* boostup section */
-section.boostup .wrapper {
+.wrapper {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -322,9 +327,12 @@ section .boostup-wrap .separator {
     width: 50px;
     margin-bottom: 20px;
 }
-
-section .boostup-wrap {
+section.boostup .wrapper .boostup-wrap {
     max-width: 400px;
+}
+
+.boostup-wrap {
+    max-width: 500px;
     padding: 4vmin;
     flex-grow: 1;
 }
@@ -335,13 +343,17 @@ section .boostup-wrap h1{
     line-height: 110%;
 }
 
-section .boostup-wrap p{
+.boostup-wrap p{
     font-weight: normal;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 1.1rem;
     color: var(--gray);
     margin: 25px 0;
     line-height: 110%;
+}
+
+section.boostup .wrapper .boostup-wrap p {
+    letter-spacing: 2px;
 }
 
 .boostup-wrap li {
@@ -363,4 +375,89 @@ section .boostup-wrap p{
 .boostup-wrap li div > i {
     font-size: 2rem;
     color: var(--green); 
+}
+
+/* advance features section */
+.card-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.adv-card {
+    max-width: 250px;
+    max-height: 300px;
+    margin: 2vmin;
+    border-radius: 15px;
+    padding: 40px 25px;
+    background-color: var(--blue);
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.adv-card > * {
+    color: var(--white);
+}
+
+.adv-card > h3 {
+    font-family: "Poppins";
+    letter-spacing: 1px;
+    margin: 15px 0;
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+.adv-card > p {
+    letter-spacing: 0.9px;
+    font-size: 16px;
+}
+
+/* price section */
+.price .boostup-wrap p {
+    color: var(--darkgray);
+}
+
+.reverse-gradient, .selected {
+    background-image: linear-gradient( to top right, rgb(8, 167, 221), rgb(0, 215, 221) );
+}
+.ym-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+    margin-top: 50px;
+}
+
+.ym-wrap > a.btn {
+    margin: 0;
+    border: 1px solid var(--gray);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Poppins";
+    text-transform: capitalize;
+    outline: none;
+}
+
+.ym-wrap > a.btn:first-child {
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.ym-wrap > a.btn:last-child {
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.ym-wrap > a.btn.selected {
+    color: var(--white);
 }
