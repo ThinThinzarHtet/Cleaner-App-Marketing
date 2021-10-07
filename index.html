@@ -144,12 +144,49 @@
                 <h1>Not any hidden charge, Choose you pricing plan</h1>
                 <p class="black">We have differe type of pricing table to choose with your need with resonable price.</p>
                 <div class="ym-wrap">
-                    <a href="#" id="btn-monthly" class="btn selected">Monthly</a>
-                    <a href="#" id="btn-yearly" class="btn selected">Yearly</a>
+                    <a href="#" id="btn-monthly" class="btn selected" onclick="swapPriceCard(event)">Monthly</a>
+                    <a href="#" id="btn-yearly" class="btn" onclick="swapPriceCard(event)">Yearly</a>
+                </div>
+            </div>
+            <div class="price-wrap">
+                <div id="card-monthly" class="price-card monthly">
+                    <h3 class="darkgray">Personal</h3>
+                    <h3 class="whatwedo">Monthly Package</h3>
+                    <h1 class="price darkgray">$57<span>.99</span></h1>
+                    <p>500GB Bandwidth</p>
+                    <p>Business & Financial Analysis</p>
+                    <p>24 hours support</p>
+                    <p>Customer Management</p>
+                    <a href="#" class="btn learn-more"><span></span>Signup</a>
+                </div>
+                <div id="card-yearly" class="price-card yearly">
+                    <h3 class="darkgray">Business</h3>
+                    <h3 class="whatwedo">Yearly Package</h3>
+                    <h1 class="price darkgray">$89<span>.99</span> </h1>
+                    <p>1200GB Bandwidth</p>
+                    <p>Business & Financial Analysis</p>
+                    <p>24 hours support</p>
+                    <p>Customer Management</p>
+                    <a href="#" class="btn learn-more"><span></span>Signup</a>
                 </div>
             </div>
         </div>
     </section>
-
+    <section class="contact">
+        <div class="wrapper">
+            <form class="contact-wrap" autocomplete="off">
+                <input type="text" name="email" placeholder="Email Address *" />
+                <input type="text" name="subject" placeholder="Subject *" />
+                <textarea name="message" placeholder="Message *"></textarea>
+                <input type="submit" class="btn learn-more reverse-gradient" value="Send Message">
+            </form>
+            <div class="boostup-wrap">
+                <h3 class="whatwedo" style="text-align: left; margin-top: 10px; margin-bottom: 30px;">contact us</h3>
+                <h1 style="margin-bottom: 50px;">Don't Hesitate to contact with us for any kind of information</h1>
+                <p>Call us for imiditate support this number</p>
+                <h1 class="phone green-hover">+880 876 65 455</h1>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
